@@ -22,6 +22,7 @@ while (!exit)
     Console.WriteLine("..................................................................");
     Console.WriteLine();
 
+
     Console.Write("Enter your name: ");
     var player = Console.ReadLine();
     var opponent = "Computer";
