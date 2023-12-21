@@ -70,7 +70,7 @@ while (!exit)
 
     string warWinner = GuessWarWinner(playerScore, opponentScore);
     var result = warWinner == null 
-        ? "It's a draw :|" 
+        ? "It's a draw :|"
         : warWinner == "player" 
             ? "You won :)" : "You lose :(";
 
@@ -106,4 +106,3 @@ string GuessWarWinner(int playerScore, int opponentScore)
     else if (playerScore > opponentScore) return "player";
     else return null;
 }
-
