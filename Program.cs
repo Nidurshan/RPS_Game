@@ -35,15 +35,15 @@ while (!exit)
 
     var times = 3;
 
-    for (var i=0; i<times; i++)
+    for (var i=0; i<times + 1; i++)
     {
         Console.Write($"{player} => ");
         var playerWeaponCode = Console.ReadLine().ToUpper();
         var playerWeapon = weaponMaps[playerWeaponCode];
 
-        var random = new Random().Next(1, 4);
-        var randomWeaponCode = weaponCodes[random - 1];
-        var opponentWeapon = weaponMaps[randomWeaponCode];
+        var random = new Random().Next(1, 4);   ////
+        var randomWeaponCode = weaponCodes[random - 1];   ////
+        var opponentWeapon = weaponMaps[randomWeaponCode];   ////
 
         var battleWinner = GuessBattleWinner(playerWeapon, opponentWeapon);
 
